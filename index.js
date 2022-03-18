@@ -1,5 +1,6 @@
 // 1
 const companhia = 'Hyped CO';
+console.log(`*----------------*----------------*`);
 console.log(`\nWelcome to ${company}\n`);
 console.log(`*----------------*----------------*`);
 
