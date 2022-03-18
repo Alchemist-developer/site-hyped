@@ -84,8 +84,8 @@ const buscaRoupas = campo => {
     console.log(novaRoupa);
 }
 
-searchRoupas('hyped');
-searchRoupas('autentic');
+buscaRoupas('hyped');
+buscaRoupas('autentic');
 
 // 8
 const atualizaRoupas = (id, roupa) => {
