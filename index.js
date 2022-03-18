@@ -55,7 +55,7 @@ const mostrarRoupa = () => {
 mostrarRoupa();
 
 // 6
-    const deletaRoupa= id => {
+const deletaRoupa = id => {
     const novaRoupa = roupas.filter(item => item.id != id);
     const roupa = roupas.filter(item => !novaRoupa.includes(item));
 
