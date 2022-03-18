@@ -121,4 +121,4 @@ const atualizaRoupas = (id, roupa) => {
     console.log(roupas);
 }
 
-updateRoupas(999999); 
+atualizaRoupas(999999); 
