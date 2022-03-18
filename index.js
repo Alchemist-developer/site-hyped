@@ -32,7 +32,7 @@ const addRoupa = (titulo, tamanho, tecido, video, infantil) => {
     });
 
     console.log('Sua lista de roupas:\n');
-    console.log(lista);
+    console.log(roupas);
     console.log(`\nPeça "${titulo}" adicionada com sucesso!\n`);
     console.log('---------------------------------------');
 }
@@ -42,7 +42,7 @@ addRoupa('nice jeans', 'p/m', ['poliester', 'jeans'], 'https://www.google.com', 
 
 // 5
 const mostrarRoupa = () => {
-    roupa.forEach(item => {
+    roupas.forEach(item => {
         console.log(`Item: "${item.title}"`);
 
         console.log(`Tamanho:\n> ${item.tamanho}`);
