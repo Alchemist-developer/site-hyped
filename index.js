@@ -93,23 +93,20 @@ const atualizaRoupas = (id, roupa) => {
 
     const novaRoupa = roupas.map(item => {
         if (item.id == id) {
-            if (roupa.title) {
-                item.title = roupa.title;
+            if (roupa.titulo) {
+                item.titulo = roupa.titulo;
             }
-            if (roupa.difficulty) {
-                item.difficulty = roupa.difficulty;
+            if (roupa.tamanho) {
+                item.tamanho = roupa.tamanho;
             }
-            if (roupa.ingredients) {
-                item.ingredients = roupa.ingredients;
-            }
-            if (roupa.instructions) {
-                item.instructions = roupa.instructions;
+            if (roupa.tecido) {
+                item.tecido = roupa.tecido;
             }
             if (roupa.video) {
                 item.video = roupa.video;
             }
-            if (roupa.vegan) {
-                item.vegan = roupa.vegan;
+            if (roupa.infantil) {
+                item.infantil = roupa.infantil;
             }
             atualizado = true;
             console.log(`\nRoupa "${id} - ${item.title}" atualizada!\n`);
