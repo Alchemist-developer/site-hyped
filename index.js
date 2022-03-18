@@ -69,7 +69,7 @@ const deletaRoupa = id => {
     console.log(roupas);
 }
 
-deletaRoupa(999999);
+// deletaRoupa();
 
 // 7
 const buscaRoupas = campo => {
@@ -121,4 +121,4 @@ const atualizaRoupas = (id, roupa) => {
     console.log(roupas);
 }
 
-atualizaRoupas(999999); 
+// atualizaRoupas(); 
