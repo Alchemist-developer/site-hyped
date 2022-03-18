@@ -1,6 +1,7 @@
 // 1
 const companhia = 'Hyped CO';
 console.log(`\nWelcome to ${company}\n`);
+console.log(`*----------------*----------------*`);
 
 // 2
 var roupas = [];
@@ -21,7 +22,6 @@ roupas = [
 
 // 4
 const addRoupa = (titulo, tamanho, tecido, video, infantil) => {
-
     lista.push({
         id: Math.random().toString().substr(2, 6),
         titulo,
@@ -30,11 +30,10 @@ const addRoupa = (titulo, tamanho, tecido, video, infantil) => {
         video,
         infantil
     });
-
     console.log('Sua lista de roupas:\n');
     console.log(roupas);
     console.log(`\nPeça "${titulo}" adicionada com sucesso!\n`);
-    console.log('---------------------------------------');
+    console.log(`*----------------*----------------*`);
 }
 
 addRoupa('nice shirt', 'g/gg', ['poliester', 'algodão'], 'https://www.google.com', false);
@@ -44,11 +43,9 @@ addRoupa('nice jeans', 'p/m', ['poliester', 'jeans'], 'https://www.google.com', 
 const mostrarRoupa = () => {
     roupas.forEach(item => {
         console.log(`Item: "${item.title}"`);
-
         console.log(`Tamanho:\n> ${item.tamanho}`);
-
         console.log(`Infantil: ${item.infantil}\n`);
-        console.log('---------------------------------------');
+        console.log(`*----------------*----------------*`);
     })
 };
 
@@ -67,6 +64,7 @@ const deletaRoupa = id => {
     console.log(`Peça "${id} - ${roupa[0].title}"deletada!\n`);
     console.log('\nSua lista de Roupas\n');
     console.log(roupas);
+    console.log(`*----------------*----------------*`);
 }
 
 // deletaRoupa();
@@ -80,8 +78,9 @@ const buscaRoupas = campo => {
     }
 
     let resultado = novaRoupa.length;
-    console.log(`\nRoupas containing "${campo}": ${results}\n`);
+    console.log(`\nConteúdo de Roupas "${campo}": ${results}\n`);
     console.log(novaRoupa);
+    console.log(`*----------------*----------------*`);
 }
 
 buscaRoupas('hyped');
@@ -110,15 +109,17 @@ const atualizaRoupas = (id, roupa) => {
             }
             atualizado = true;
             console.log(`\nRoupa "${id} - ${item.title}" atualizada!\n`);
+            console.log(`*----------------*----------------*`);
         }
     });
 
     if (!atualizado) {
         return console.log(`\nRoupa "${id}" não encontrada\n`);
     }
-
     console.log('Sua lista de Roupas:\n');
+    console.log(`*---------------------------------*`);
     console.log(roupas);
+    console.log(`*---------------------------------*`);
 }
 
 // atualizaRoupas(); 
